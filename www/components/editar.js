@@ -11,7 +11,7 @@ var parametros ={
 
 $.ajax({
 type: "post",
-url: "www",
+url: "https://ronestacionamento.000webhostapp.com/cadastra.php",
 data: parametros,
 success: function(data){
   navigator.notification.alert(data);
@@ -20,7 +20,7 @@ success: function(data){
   $("marca").val("");
   $("tipo").val("");
   $("placa").val("");
-  $("entrada").val("");
+  $("entrada").val("")
 },
 error: function(data){
   navigator.notification.alert("Erro ao cadastrar");
